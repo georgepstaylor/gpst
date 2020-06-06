@@ -1,0 +1,52 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 50px 30px 50px;
+}
+
+.wrapper-header {
+    width: 80%;
+    min-height: 300px;
+    margin: 0 auto;
+    display: -webkit-flex; /* Safari */     
+    display: flex; /* Standard syntax */
+}
+
+.wrapper-header > div {
+    padding: 10px;
+    background: #dbdfe5;
+    -webkit-flex: 1; /* Safari */
+    -ms-flex: 1; /* IE 10 */
+    flex: 1; /* Standard syntax */
+}
+
+/* .right-header {
+    margin-left: auto;
+} */
+
+.wrapper-header h1{
+    font-size: 5rem;;
+}
+
+/* .left-header {
+    
+} */
+
+.social ul > li {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 3px;;
+}
+
+.social > ul {
+    padding: 0;
+}
+
+.social ul > li > a:link {
+    color: black;
+  }
+
+  .social ul > li > a:visited {
+    color: black;
+  }
+
