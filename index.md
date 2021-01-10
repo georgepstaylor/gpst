@@ -1,6 +1,6 @@
 ---
 title: gpst
-layout: default
+layout: index
 ---
 
 # About
