@@ -2,38 +2,39 @@
 
 <!doctype html>
 <html>
-    <head>
-        <title>{{page.title}}</title>
-        <script src="https://kit.fontawesome.com/ff895bbbe1.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com"> 
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/main.css" }}">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
 
-    <body>
+<head>
+    <title>{{page.title}}</title>
+    <script src="https://kit.fontawesome.com/ff895bbbe1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/main.css" }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
     <div class="wrapper-header">
+        <!-- <img class="memoji" src="{{ "assets/memoji.jpg" | relative_url }}"> -->
         <div class="header">
-                <img class="memoji" src="{{ "assets/memoji.jpg" | relative_url }}">
-                <h1 class="name">George Taylor</h1>
-        <div class="addon">
+            <h1 class="name">Hey, I'm George.</h1>
+            <div class="addon-header">
+                <h3><i class="fas fa-map-marked-alt location"></i> Hampshire, UK</h3>
                 <div class="social">
                     <ul>
                         <li><a href="https://twitter.com/georgepstaylor"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="https://github.com/georgepstaylor"><i class="fab fa-github"></i></a></li>
                         <li><a href="https://instagram.com/gps.taylor"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://linkedin.com/in/georgepstaylor/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://linkedin.com/in/georgepstaylor/"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
                     </ul>
+                </div>
 
-                </div>
-                <div class="location-header">
-                    <h3><i class="fas fa-map-marked-alt"></i> Surrey, UK</h3>
-                </div>
             </div>
         </div>
     </div>
     <div class="content">
         {{ content }}
     </div>
-    </body>
+</body>
+
 </html>

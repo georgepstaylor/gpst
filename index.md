@@ -11,4 +11,6 @@ Hey, I’m George 👋. I’m an Application Developer working in Hampshire, UK.
 
 ## Work
 
+#### Fujitsu 
+
 ## Education

@@ -1,5 +1,72 @@
 .name{
     font-family: 'Rubik', sans-serif;
-    font-weight: 700;
-    font-size: 70px;
+    font-weight: 500;
+    font-size: 50px;
+    margin: 0;
+    border: 3px solid #007CBE ;
+    border-radius: 15px;
+    padding: 25px;
+    background-color: #007CBE;
+    color: white;
+}
+
+.addon-header {
+    padding: 5px;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 425px;
+    margin: auto;
+}
+
+.addon-header > h3 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.social ul > li{
+    display: inline-block;
+    padding: 5px;
+}
+
+.social ul {
+    padding: 0;
+    display: flex;
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.location {
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.memoji {
+    display: block;
+    width: 10em;
+    max-width: 240px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    align-items: center;
+}
+
+.wrapper-header {
+    max-width: 453px;
+    margin: auto;
+}
+
+body {
+    width: 90%;
+    margin: auto;
 }
