@@ -1,49 +1,64 @@
-.name{
+.name {
     font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    font-size: 50px;
-    margin: 0;
-    border: 3px solid #007CBE ;
+    font-weight: 700;
+    font-size: 4em;
+    margin: auto 0;
+    /* border: 3px solid #007CBE ; */
     border-radius: 15px;
-    padding: 25px;
-    background-color: #007CBE;
-    color: white;
+    padding: 50px 0 25px 0;
+    /* background-color: #007CBE; */
+    color: black;
+    width: 100%;
+    text-align: center;
 }
 
 .addon-header {
-    padding: 5px;
     font-family: 'Rubik', sans-serif;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 425px;
-    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto 0;
 }
 
-.addon-header > h3 {
+.addon-header>h3 {
     margin: 0;
     font-weight: 400;
 }
+.addon-header > .currently {
+    text-align: left;
+    width: 60%;
+}
 
-.social ul > li{
+.currently > h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.social ul li {
     display: inline-block;
     padding: 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    width: 30px;
+    list-style: none;
 }
 
 .social ul {
-    padding: 0;
+    padding: 25px 0 25px 0;
     display: flex;
-    width: 50%;
-    height: 30px;
-    line-height: 30px;
-    margin: 0;
+    justify-content: space-between;
+    height: 46px;
+    margin: auto;
 }
 
+.social,
 .location {
-    width: 50%;
-    height: 30px;
-    line-height: 30px;
-    margin: 0;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
 }
 
 .memoji {
@@ -62,11 +77,58 @@
 }
 
 .wrapper-header {
-    max-width: 453px;
+    max-width: 720px;
     margin: auto;
 }
 
-body {
-    width: 90%;
-    margin: auto;
+.socsq {
+    border: solid 3px;
+    border-radius: 10px;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
 }
+
+.socsq.twitter {
+    border-color: #1da1f2;
+}
+
+.socsq.twitter:hover {
+    border-color: black;
+    color: white;
+    background-color: #1da1f2;
+}
+
+.socsq.instagram {
+    border-color: #c13584;
+}
+
+.socsq.instagram:hover {
+    border-color: black;
+    color: white;
+    background-color: #c13584;
+}
+
+.socsq.linkedin {
+    border-color: #0077b5;
+}
+
+.socsq.linkedin:hover {
+    border-color: black;
+    color: white;
+    background-color: #0077b5;
+}
+
+.socsq.github {
+    border-color: #6e5494;
+}
+
+.socsq.github:hover {
+    border-color: black;
+    color: white;
+    background-color: #6e5494;
+}
+
+/* html, body {
+    overflow-x: hidden;
+} */
