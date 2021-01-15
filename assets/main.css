@@ -174,7 +174,7 @@ a.btn {
     font-weight: 400;
     background:
         linear-gradient(to bottom, #C5FCF1 0%,
-        #C5FCF1 100%);
+            #C5FCF1 100%);
     background-position: 0 105%;
     background-repeat: repeat-x;
     background-size: 2px 4px;
@@ -199,7 +199,7 @@ a.inlinehref {
     color: inherit;
     background:
         linear-gradient(to bottom, #C5FCF1 0%,
-        #C5FCF1 100%);
+            #C5FCF1 100%);
     background-position: 0 105%;
     background-repeat: repeat-x;
     background-size: 2px 3px;
@@ -214,7 +214,6 @@ a.inlinehref:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 /* ANIMATION */
