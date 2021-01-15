@@ -1,6 +1,55 @@
 html,
 body {
     background-color: #fafafa;
+    font-family: 'Rubik', sans-serif;
+}
+
+nav {
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    list-style: none;
+    text-align: center;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    background:
+        linear-gradient(to bottom, #C5FCF1 0%,
+            #C5FCF1 100%);
+    background-position: 0 105%;
+    background-repeat: repeat-x;
+    background-size: 10px 5px;
+}
+
+nav a:hover {
+    /* transform: skewX(-25deg); */
+    background-size: 10px 50px;
+}
+
+nav > ul {
+    margin:0;
+    padding: 0;
+}
+
+
+nav a {
+    text-transform: uppercase;
+    padding: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
 }
 
 .name {
@@ -10,7 +59,7 @@ body {
     margin: auto 0;
     /* border: 3px solid #007CBE ; */
     border-radius: 15px;
-    padding: 50px 0 25px 0;
+    padding: 25px 0 25px 0;
     /* background-color: #007CBE; */
     color: black;
     width: 100%;
@@ -189,14 +238,14 @@ a.btn>.svg-inline--fa {
 }
 
 a.inlinehref {
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
     display: inline-block;
     background-color: #C5FCF1;
     padding: 1px;
     text-decoration: none;
     color: inherit;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
     background:
         linear-gradient(to bottom, #C5FCF1 0%,
             #C5FCF1 100%);
@@ -216,4 +265,28 @@ a.inlinehref:hover {
     justify-content: space-between;
 }
 
-/* ANIMATION */
+.main {
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+}
+
+@media only screen 
+    and (max-width: 800px) { 
+        .main {
+            width: 95%;
+            max-width: 1080px;
+            margin: auto;
+    }
+
+    nav {
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+    nav a {
+        display: inline-block;
+        font-size: 15px;
+        height: 35px;
+        line-height: 35px;
+    }
+}
