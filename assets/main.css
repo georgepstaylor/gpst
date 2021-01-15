@@ -278,6 +278,9 @@ a.inlinehref:hover {
             max-width: 1080px;
             margin: auto;
     }
+    .name {
+        font-size: 4em;
+    }
 
     nav {
         flex-direction: column;
