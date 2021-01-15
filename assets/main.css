@@ -159,10 +159,6 @@ body {
     background-color: #6e5494;
 }
 
-/* html, body {
-    overflow-x: hidden;
-} */
-
 a.btn {
     transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
@@ -218,7 +214,7 @@ a.inlinehref:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 /* ANIMATION */
