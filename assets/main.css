@@ -11,6 +11,19 @@
     width: 100%;
     text-align: center;
 }
+.tagline {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1.6em;
+    margin: auto 0;
+    /* border: 3px solid #007CBE ; */
+    border-radius: 15px;
+    padding:0;
+    /* background-color: #007CBE; */
+    color: black;
+    width: 100%;
+    text-align: center;
+}
 
 .addon-header {
     font-family: 'Rubik', sans-serif;
@@ -34,6 +47,7 @@
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 300;
+    color: rgba(0,0,0,0.5);
 }
 
 .social ul li {
@@ -44,6 +58,7 @@
     font-size: 25px;
     width: 30px;
     list-style: none;
+    text-align: center;
 }
 
 .social ul {
@@ -57,8 +72,6 @@
 .social,
 .location {
     width: 60%;
-    padding: 10px;
-    text-align: center;
 }
 
 .memoji {
