@@ -351,6 +351,7 @@ a.inlinehref:hover {
     nav {
         flex-direction: column;
         margin-bottom: 25px;
+        font-size: 16px;
     }
 
     nav a {
