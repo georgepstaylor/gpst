@@ -275,9 +275,17 @@ a.inlinehref:hover {
     padding: 25px 0 25px 0;
 }
 
+.grid {
+    display: flex;
+    width: 100%;
+    flex-wrap:wrap;
+    justify-content: center;
+    /* overflow-x: scroll; */
+}
+
 .item {
     display: block;
-    width: 320px;
+    width: 25%;
     text-align: center;
     /* border: 3px solid black; */
     background-color: #F2F4F8;
@@ -285,7 +293,7 @@ a.inlinehref:hover {
     padding: 5px;
     text-decoration: none;
     color: inherit;
-
+    margin: 15px;
     transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
@@ -315,10 +323,18 @@ a.inlinehref:hover {
 
 .item>h3 {
     font-weight: 400;
+    margin-bottom: 5px;
 }
 
 .item>img {
-    width: 60%;
+    width: 40%;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .item {
+        width: 400px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -358,6 +374,5 @@ a.inlinehref:hover {
     }
     .item {
         width: 90%;
-        margin: auto;
     }
 }
