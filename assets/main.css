@@ -326,14 +326,35 @@ a.inlinehref:hover {
     margin-bottom: 5px;
 }
 
+.item>h4 {
+    font-weight: 300;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
 .item>img {
     width: 40%;
     padding: 10px;
 }
 
+.posts >  .grid > .item {
+    width: 45% !important;
+}
+
+.item > p {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
 @media only screen and (max-width: 1300px) {
     .item {
         width: 400px;
+    }
+    .posts >  .grid > .item {
+        width: 90% !important;
     }
 }
 
