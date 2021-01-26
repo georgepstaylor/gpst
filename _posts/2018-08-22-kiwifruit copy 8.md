@@ -1,5 +1,5 @@
 ---
-title: sample post with title 2
+title: sample post with title 9
 layout: post
 featured: true
 category: write
