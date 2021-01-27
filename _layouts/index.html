@@ -11,9 +11,9 @@
     <meta property="og:image" content="https://github.com/georgepstaylor/gpst/blob/master/assets/memoji.jpg?raw=true" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body class="preload">
+<body class="preload" onload="cssAniFix()">
     <script>
-        if (document.readyState == "complete") {
+        function cssAniFix(){
             document.getElementsByName('body').classList.remove("preload");
         }
     </script>
