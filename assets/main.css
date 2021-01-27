@@ -24,9 +24,9 @@ nav a {
     font-size: 22px;
     list-style: none;
     text-align: center;
-    transition: background-size 0.25s ease-in-out;
-    -moz-transition: background-size 0.25s ease-in-out;
-    -webkit-transition: background-size 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
     background:
         linear-gradient(to bottom, #C5FCF1 0%,
             #C5FCF1 100%);
@@ -209,9 +209,9 @@ nav a {
 }
 
 a.btn {
-    transition: background-size 0.25s ease-in-out;
-    -moz-transition: background-size 0.25s ease-in-out;
-    -webkit-transition: background-size 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
     display: block;
     height: 25px;
     line-height: 25px;
@@ -243,9 +243,9 @@ a.inlinehref {
     padding: 1px;
     text-decoration: none;
     color: inherit;
-    transition: background-size 0.25s ease-in-out;
-    -moz-transition: background-size 0.25s ease-in-out;
-    -webkit-transition: background-size 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
     background:
         linear-gradient(to bottom, #C5FCF1 0%,
             #C5FCF1 100%);
@@ -295,9 +295,9 @@ a.inlinehref:hover {
     text-decoration: none;
     color: inherit;
     margin: 15px;
-    transition: transform 0.25s ease-in-out;
-    -moz-transition: transform 0.25s ease-in-out;
-    -webkit-transition: transform 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
 }
 
 .item:hover {
