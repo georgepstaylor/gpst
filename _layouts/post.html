@@ -25,7 +25,7 @@
         <div class="section">
             <h2>Things I've written like this:</h2>
             <div class="grid">
-                {% for post in site.related_posts %}
+                {% for post in site.related_posts limit:3 %}
                 {%if post.category == 'write' %}
                 <a class="item" href="{{post.url}}">
                     <h3>{{post.title}}</h3>
