@@ -46,7 +46,7 @@ title: Home
         <h2>Things I've built</h2>
         <div class="grid">
             {% assign posts = site.posts | where_exp: "post","post.category == 'proj' and post.featured" %}
-            {% for post in posts % limit:3}
+            {% for post in posts % limit:3 %}
             <a class="item" href="{{post.url}}">
                 <h3>{{post.title}}</h3>
                 <h4>{{ post.date | date_to_string }}</h4>
@@ -68,7 +68,7 @@ title: Home
         <h2>Things I've written</h2>
         <div class="grid">
             {% assign posts = site.posts | where_exp: "post","post.category == 'write' and post.featured" %}
-            {% for post in posts % limit:3}
+            {% for post in posts % limit:3 %}
             <a class="item" href="{{post.url}}">
                 <h3>{{post.title}}</h3>
                 <h4>{{ post.date | date_to_string }}</h4>
