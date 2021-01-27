@@ -14,7 +14,7 @@
 <body class="preload" onload="cssAniFix()">
     <script>
         function cssAniFix(){
-            document.getElementsByName('body').classList.remove("preload");
+            document.getElementsByTagName('body')[0].classList.remove("preload");
         }
     </script>
     {% include navigation.html %}
