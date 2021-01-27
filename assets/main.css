@@ -24,9 +24,9 @@ nav a {
     font-size: 22px;
     list-style: none;
     text-align: center;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
+    transition: background-size 0.25s ease-in-out;
+    -moz-transition: background-size 0.25s ease-in-out;
+    -webkit-transition: background-size 0.25s ease-in-out;
     background:
         linear-gradient(to bottom, #C5FCF1 0%,
             #C5FCF1 100%);
@@ -209,9 +209,9 @@ nav a {
 }
 
 a.btn {
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
+    transition: background-size 0.25s ease-in-out;
+    -moz-transition: background-size 0.25s ease-in-out;
+    -webkit-transition: background-size 0.25s ease-in-out;
     display: block;
     height: 25px;
     line-height: 25px;
@@ -243,9 +243,9 @@ a.inlinehref {
     padding: 1px;
     text-decoration: none;
     color: inherit;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
+    transition: background-size 0.25s ease-in-out;
+    -moz-transition: background-size 0.25s ease-in-out;
+    -webkit-transition: background-size 0.25s ease-in-out;
     background:
         linear-gradient(to bottom, #C5FCF1 0%,
             #C5FCF1 100%);
@@ -279,7 +279,7 @@ a.inlinehref:hover {
 .grid {
     display: flex;
     width: 100%;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: center;
     /* overflow-x: scroll; */
 }
@@ -295,9 +295,9 @@ a.inlinehref:hover {
     text-decoration: none;
     color: inherit;
     margin: 15px;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
+    -moz-transition: transform 0.25s ease-in-out;
+    -webkit-transition: transform 0.25s ease-in-out;
 }
 
 .item:hover {
@@ -308,9 +308,9 @@ a.inlinehref:hover {
     padding: 10px;
 }
 
-.item .tags > span{
+.item .tags>span {
     border: 3px solid;
-    border-color:var(--tagcolor);
+    border-color: var(--tagcolor);
     padding: 5px 10px 5px 10px;
     font-size: 12px;
     border-radius: 15px;
@@ -339,11 +339,11 @@ a.inlinehref:hover {
     padding: 10px;
 }
 
-.posts >  .grid > .item {
+.posts>.grid>.item {
     width: 45% !important;
 }
 
-.item > p {
+.item>p {
     width: 60%;
     margin: auto;
     text-align: left;
@@ -354,7 +354,8 @@ a.inlinehref:hover {
     .item {
         width: 400px;
     }
-    .posts >  .grid > .item {
+
+    .posts>.grid>.item {
         width: 90% !important;
     }
 }
@@ -397,7 +398,17 @@ a.inlinehref:hover {
     .addon-header>.currently {
         width: 90%;
     }
+
     .item {
         width: 90%;
     }
 }
+
+
+/* Stop stupid css animations on load.......... */
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+  }
