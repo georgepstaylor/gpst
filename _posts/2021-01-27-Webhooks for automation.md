@@ -8,7 +8,7 @@ tag_colors:
 ---
 
 
-{% highlight ruby %}
+{% highlight ruby linenos%}
 def foo
   puts 'foo'
 end
