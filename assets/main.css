@@ -1,3 +1,4 @@
+@import "github.css";
 html,
 body {
     background-color: #fafafa;
@@ -279,7 +280,7 @@ a.inlinehref:hover {
 .grid {
     display: flex;
     width: 100%;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: center;
     /* overflow-x: scroll; */
 }
@@ -323,7 +324,7 @@ a.inlinehref:hover {
 
 .tags>span {
     border: 3px solid;
-    border-color:var(--tagcolor);
+    border-color: var(--tagcolor);
     padding: 5px 10px 5px 10px;
     font-size: 12px;
     border-radius: 15px;
@@ -353,11 +354,11 @@ a.inlinehref:hover {
     padding: 10px;
 }
 
-.posts >  .grid > .item {
+.posts>.grid>.item {
     width: 45% !important;
 }
 
-.item > p {
+.item>p {
     width: 60%;
     margin: auto;
     text-align: left;
@@ -368,7 +369,8 @@ a.inlinehref:hover {
     .item {
         width: 400px;
     }
-    .posts >  .grid > .item {
+
+    .posts>.grid>.item {
         width: 90% !important;
     }
 }
@@ -411,6 +413,7 @@ a.inlinehref:hover {
     .addon-header>.currently {
         width: 90%;
     }
+
     .item {
         width: 90%;
     }

@@ -11,8 +11,12 @@
     <meta property="og:image" content="https://github.com/georgepstaylor/gpst/blob/master/assets/memoji.jpg?raw=true" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
-<body>
+<body class="preload" onload="cssAniFix()">
+    <script>
+        function cssAniFix(){
+            document.getElementsByTagName('body')[0].classList.remove("preload");
+        }
+    </script>
     {% include navigation.html %}
     {{ content}}
 </body>
