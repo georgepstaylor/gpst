@@ -291,7 +291,7 @@ a.inlinehref:hover {
     /* border: 3px solid black; */
     background-color: #F2F4F8;
     border-radius: 15px;
-    padding: 5px;
+    padding: 5px 5px 20px 5px;
     text-decoration: none;
     color: inherit;
     margin: 15px;
@@ -300,15 +300,28 @@ a.inlinehref:hover {
     -webkit-transition: all 0.25s ease-in-out;
 }
 
+.post_title {
+    margin-bottom: 0;
+}
+
 .item:hover {
     transform: scale(1.03);
 }
 
-.item .tags {
-    padding: 10px;
+.meta {
+    display: flex;
+    height: 50px;
 }
 
-.item .tags > span{
+.tags.inline{
+    display: inline;
+}
+
+.tags.inline > span {
+    line-height: 50px;
+}
+
+.tags>span {
     border: 3px solid;
     border-color:var(--tagcolor);
     padding: 5px 10px 5px 10px;
@@ -316,6 +329,7 @@ a.inlinehref:hover {
     border-radius: 15px;
     margin: 0 5px 0 5px;
     text-transform: uppercase;
+
 }
 
 .main>h2 {
@@ -400,4 +414,16 @@ a.inlinehref:hover {
     .item {
         width: 90%;
     }
+    .post_title {
+        margin-top:50px;
+    }
 }
+
+
+/* Stop stupid css animations on load.......... */
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+  }
