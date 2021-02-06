@@ -13,21 +13,28 @@
     <meta property="og:image" content="https://github.com/georgepstaylor/gpst/blob/master/assets/memoji.jpg?raw=true" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body class="preload" onload="cssAniFix()">
     <script>
-        function cssAniFix(){
+        function cssAniFix() {
             document.getElementsByTagName('body')[0].classList.remove("preload");
         }
     </script>
     {% include navigation.html %}
     <div class="main">
-        <h1 class="post_title">{{page.title}}</h1>
-        <div class="meta">
-            <p>{{page.date | date_to_long_string: "ordinal" }} &emsp; | &emsp; <div class="tags inline">
-                {% for tag in page.tags %}
-                <span style="--tagcolor:{{page.tag_colors[forloop.index0]}};">{{tag}}</span>
-                {%endfor%}
-            </div></p>
+        <div class="hero" style="background: linear-gradient(
+            rgba(0, 0, 0, 0.45), 
+            rgba(0, 0, 0, 0.45)
+            ),url({{ page.headerimg }});">
+            <h1 class="post_title">{{page.title}}</h1>
+            <div class="meta">
+                <p>{{page.date | date_to_long_string: "ordinal" }} &emsp; | &emsp; <div class="tags inline">
+                        {% for tag in page.tags %}
+                        <span style="--tagcolor:{{page.tag_colors[forloop.index0]}};">{{tag}}</span>
+                        {%endfor%}
+                    </div>
+                </p>
+            </div>
         </div>
         {{ content}}
         <div class="section">
@@ -50,7 +57,7 @@
                     </div>
                 </a>
                 {% endfor %}
-    
+
             </div>
         </div>
     </div>

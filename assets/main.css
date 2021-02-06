@@ -333,6 +333,13 @@ a.inlinehref:hover {
 
 }
 
+.hero {
+    width: 100%;
+    border-radius: 15px;
+    padding:25px;
+    color: white;
+}
+
 .main>h2 {
     font-weight: 700;
 }
