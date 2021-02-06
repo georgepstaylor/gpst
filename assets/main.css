@@ -9,10 +9,11 @@ nav {
     width: 80%;
     max-width: 1080px;
     margin: auto;
-    height: 75px;
+    min-height: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 
@@ -330,14 +331,12 @@ a.inlinehref:hover {
     border-radius: 15px;
     margin: 0 5px 0 5px;
     text-transform: uppercase;
-
 }
 
 .hero {
-    width: 100%;
     border-radius: 15px;
-    padding:25px;
-    color: white;
+    padding:50px 25px 50px 25px;
+    color: white;    
 }
 
 .main>h2 {
@@ -383,6 +382,7 @@ a.inlinehref:hover {
 }
 
 @media only screen and (max-width: 800px) {
+
     .main {
         width: 90%;
         max-width: 1080px;
@@ -398,6 +398,7 @@ a.inlinehref:hover {
         flex-direction: column;
         margin: 0;
         width: 100%;
+        margin-bottom: 25px;
     }
 
     nav a {
@@ -425,7 +426,7 @@ a.inlinehref:hover {
         width: 90%;
     }
     .post_title {
-        margin-top:50px;
+        margin-top:0;
     }
 }
 

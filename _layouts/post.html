@@ -23,9 +23,11 @@
     {% include navigation.html %}
     <div class="main">
         <div class="hero" style="background: linear-gradient(
-            rgba(0, 0, 0, 0.45), 
-            rgba(0, 0, 0, 0.45)
-            ),url({{ page.headerimg }});">
+            rgba(0, 0, 0, 0.65), 
+            rgba(0, 0, 0, 0.65)
+            ),url({{ page.heroimg | if: page.heroimg, page.headerimg }});    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;;">
             <h1 class="post_title">{{page.title}}</h1>
             <div class="meta">
                 <p>{{page.date | date_to_long_string: "ordinal" }} &emsp; | &emsp; <div class="tags inline">
