@@ -9,3 +9,21 @@ tag_colors:
 - navy
 ---
 
+# Micro-segmentation
+
+# Creating a new network
+
+![Creating a new network](iotnet-1.png)
+
+## DHCP range
+
+## VLAN Tagging
+
+# Using the network
+
+## WiFi
+vlan tagging ssid
+## Switch ports
+
+# Enabling the mDNS reflector 
+`for chromecast/amazon echo`

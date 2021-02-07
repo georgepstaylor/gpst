@@ -16,6 +16,14 @@ nav {
     margin-bottom: 10px;
 }
 
+.content img {
+    display: block;
+    max-width: 75%;
+    width:max-content;
+    margin:auto;
+    border-radius: 15px;
+}
+
 
 nav a {
     display: inline-block;
@@ -428,6 +436,9 @@ a.inlinehref:hover {
     .post_title {
         margin-top:0;
     }
+    .content img {
+        max-width: 100%;
+    }    
 }
 
 

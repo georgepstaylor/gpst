@@ -1,5 +1,6 @@
 ---
-name: gpst.me
+markdown: kramdown
+name: gtaylor.uk
 tag_page_layout: tag_page
 tag_page_dir: tag
 ---
