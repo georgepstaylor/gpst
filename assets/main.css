@@ -295,7 +295,10 @@ a.inlinehref:hover {
 }
 
 .item {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     width: 25%;
     text-align: center;
     /* border: 3px solid black; */
@@ -303,11 +306,12 @@ a.inlinehref:hover {
     border-radius: 15px;
     padding: 5px 5px 20px 5px;
     text-decoration: none;
-    color: inherit;
+    color: white;
     margin: 15px;
     transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
+    /* filter: drop-shadow(3px 3px 4px rgba(0,0,0,0.5)); */
 }
 
 .post_title {
@@ -351,12 +355,12 @@ a.inlinehref:hover {
     font-weight: 700;
 }
 
-.item>h3 {
+.item h3 {
     font-weight: 500;
     margin-bottom: 5px;
 }
 
-.item>h4 {
+.item h4 {
     font-weight: 300;
     margin-bottom: 5px;
     margin-top: 5px;
@@ -369,7 +373,8 @@ a.inlinehref:hover {
 }
 
 .posts>.grid>.item {
-    width: 45% !important;
+    width: 30% !important;
+    min-height: 200px;
 }
 
 .item>p {
