@@ -9,7 +9,9 @@ tag_colors:
 - navy
 ---
 
-# Micro-segmentation
+# Segmentation
+
+Within networking, the concept of segmentation involves splitting a networking into multiple sub-networks (subnets).
 
 # Creating a new network
 
@@ -27,3 +29,5 @@ vlan tagging ssid
 
 # Enabling the mDNS reflector 
 `for chromecast/amazon echo`
+
+![mDNS Setting](iotnet-2.png)
