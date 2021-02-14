@@ -30,7 +30,7 @@ nav a {
     text-decoration: none;
     height: 45px;
     line-height: 50px;
-    font-size: 20px;
+    font-size: 18px;
     list-style: none;
     text-align: center;
     transition: all 0.25s ease-in-out;
@@ -113,8 +113,11 @@ nav a {
     text-transform: uppercase;
     font-weight: 300;
     color: rgba(0, 0, 0, 0.5);
-    margin-top: 0;
+    margin: 0;
+}
 
+.currently>p {
+    margin: 0;
 }
 
 .social ul li {
@@ -417,10 +420,14 @@ a.inlinehref:hover {
 
     nav a {
         display: inline-block;
-        font-size: 15px;
+        font-size: 16px;
         height: 35px;
         line-height: 35px;
         padding: initial;
+    }
+
+    nav > h1 {
+        font-size: 20px;
     }
 
     .social {
