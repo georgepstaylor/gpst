@@ -44,6 +44,10 @@ nav a {
     background-size: 5px 5px;
 }
 
+.no-bg {
+    background: none !important;
+}
+
 nav a:hover {
     /* transform: skewX(-25deg); */
     background-size: 5px 40px;
