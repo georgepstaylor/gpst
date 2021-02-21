@@ -294,7 +294,7 @@ a.inlinehref:hover {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     /* justify-content: center; */
     /* overflow-x: scroll; */
 }
