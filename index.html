@@ -42,10 +42,11 @@ title: Home
 </div>
 
 <div class="main">
+    {% assign posts = site.posts | where_exp: "post","post.category == 'proj' and post.featured" %}
+    {% if posts.size > 0 %}
     <div class="section">
         <h2>Things I've built</h2>
         <div class="grid">
-            {% assign posts = site.posts | where_exp: "post","post.category == 'proj' and post.featured" %}
             {% for post in posts limit:3 %}
             <a class="item" href="{{post.url}}">
                 <h3>{{post.title}}</h3>
@@ -64,10 +65,12 @@ title: Home
             {%endfor%}
         </div>
     </div>
+    {%endif%}
+    {% assign posts = site.posts | where_exp: "post","post.category == 'write' and post.featured" %}
+    {% if posts.size > 0 %}
     <div class="section">
         <h2>Things I've written</h2>
         <div class="grid">
-            {% assign posts = site.posts | where_exp: "post","post.category == 'write' and post.featured" %}
             {% for post in posts limit:3 %}
             <a class="item" href="{{post.url}}">
                 <h3>{{post.title}}</h3>
@@ -84,7 +87,7 @@ title: Home
                 </div>
             </a>
             {%endfor%}
-
         </div>
     </div>
+    {%endif%}
 </div>
