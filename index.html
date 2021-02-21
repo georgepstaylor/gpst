@@ -75,7 +75,7 @@ title: Home
     {%endif%}
     {% assign posts = site.posts | where_exp: "post","post.category == 'write' and post.featured" %}
     {% if posts.size > 0 %}
-    <div class="section">
+    <div class="posts section">
         <h2>Things I've written</h2>
         <div class="grid">
             {% for post in posts limit:3 %}
