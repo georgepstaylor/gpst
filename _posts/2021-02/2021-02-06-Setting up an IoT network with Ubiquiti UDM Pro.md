@@ -21,6 +21,8 @@ Within networking, the concept of segmentation involves splitting a networking i
 
 ## DHCP range
 
+Changing the DHCP range for your new network is reccomended so that the devices are on a different subnet.
+
 ## VLAN Tagging
 
 # Using the network
@@ -30,6 +32,8 @@ vlan tagging ssid
 ## Switch ports
 
 # Enabling the mDNS reflector 
-`for chromecast/amazon echo`
 
 ![mDNS Setting](iotnet-2.png)
+
+For devices such as Amazon Echo or a Chromecast, multicast DNS reflector must be enabled for so that they can discover devices on the network. The reason the reflector option exists is because the mDNS service doesn't function across multiple VLANs - the mDNS refelctor allows for multicast DNS to operate on multiple VLANs.
+
