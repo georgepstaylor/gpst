@@ -9,4 +9,4 @@ tag_colors:
 - '#29BEB0)'
 ---
 
-# Why does it just work?
+# Why doesn't it just work?
