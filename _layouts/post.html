@@ -43,7 +43,7 @@
         </div>
         <hr>
         <div class="section">
-            <h1>Things I've written like this:</h1>
+            <h1>More like this</h1>
                 <div class="grid">
                     {% assign posts = site.related_posts | where_exp: "post","post.category == 'write'" %}
                 {% for post in posts limit:3 %}
