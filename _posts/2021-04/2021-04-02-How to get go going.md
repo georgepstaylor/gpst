@@ -9,4 +9,4 @@ tag_colors:
 - '#29BEB0)'
 ---
 
-# Why doesn't it just work?
+# Setting up go lang
